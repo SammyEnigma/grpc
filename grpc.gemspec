@@ -1973,6 +1973,8 @@ Gem::Specification.new do |s|
   s.files += %w( src/core/transport/endpoint_transport.h )
   s.files += %w( src/core/transport/endpoint_transport_client_channel_factory.cc )
   s.files += %w( src/core/transport/endpoint_transport_client_channel_factory.h )
+  s.files += %w( src/core/transport/message_size_service_config.cc )
+  s.files += %w( src/core/transport/message_size_service_config.h )
   s.files += %w( src/core/transport/session_endpoint.cc )
   s.files += %w( src/core/transport/session_endpoint.h )
   s.files += %w( src/core/tsi/alts/crypt/aes_gcm.cc )

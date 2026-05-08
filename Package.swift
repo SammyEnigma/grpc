@@ -1970,6 +1970,8 @@ let package = Package(
         "src/core/transport/endpoint_transport.h",
         "src/core/transport/endpoint_transport_client_channel_factory.cc",
         "src/core/transport/endpoint_transport_client_channel_factory.h",
+        "src/core/transport/message_size_service_config.cc",
+        "src/core/transport/message_size_service_config.h",
         "src/core/transport/session_endpoint.cc",
         "src/core/transport/session_endpoint.h",
         "src/core/tsi/alts/crypt/aes_gcm.cc",

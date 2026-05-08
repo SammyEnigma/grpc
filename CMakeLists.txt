@@ -3024,6 +3024,7 @@ add_library(grpc
   src/core/telemetry/tcp_tracer.cc
   src/core/transport/auth_context.cc
   src/core/transport/endpoint_transport_client_channel_factory.cc
+  src/core/transport/message_size_service_config.cc
   src/core/transport/session_endpoint.cc
   src/core/tsi/alts/crypt/aes_gcm.cc
   src/core/tsi/alts/crypt/gsec.cc
@@ -3835,6 +3836,7 @@ add_library(grpc_unsecure
   src/core/telemetry/tcp_tracer.cc
   src/core/transport/auth_context.cc
   src/core/transport/endpoint_transport_client_channel_factory.cc
+  src/core/transport/message_size_service_config.cc
   src/core/transport/session_endpoint.cc
   src/core/tsi/alts/handshaker/transport_security_common_api.cc
   src/core/tsi/fake_transport_security.cc
