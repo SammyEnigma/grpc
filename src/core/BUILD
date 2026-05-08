@@ -6522,6 +6522,7 @@ grpc_cc_library(
         "channel_args_endpoint_config",
         "channel_creds_registry",
         "channel_fwd",
+        "client_channel_service_config",
         "closure",
         "composite_filter",
         "connectivity_state",
@@ -6593,6 +6594,7 @@ grpc_cc_library(
         "grpc_fault_injection_filter",
         "grpc_lb_policy_pick_first",
         "grpc_lb_policy_ring_hash",
+        "grpc_lb_policy_weighted_round_robin",
         "grpc_lb_xds_channel_args",
         "grpc_matchers",
         "grpc_outlier_detection_header",
@@ -7464,6 +7466,9 @@ grpc_cc_library(
     srcs = [
         "load_balancing/weighted_round_robin/weighted_round_robin.cc",
     ],
+    hdrs = [
+        "load_balancing/weighted_round_robin/weighted_round_robin.h",
+    ],
     external_deps = [
         "absl/base:core_headers",
         "absl/log",
@@ -7475,7 +7480,9 @@ grpc_cc_library(
     ],
     deps = [
         "channel_args",
+        "client_channel_service_config",
         "connectivity_state",
+        "env",
         "experiments",
         "grpc_backend_metric_data",
         "grpc_check",
