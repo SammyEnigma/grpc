@@ -74,10 +74,6 @@ class SessionEndpoint
     return nullptr;
   }
 
-  void SetGracefulShutdown();
-
-  void ClearCall();
-
  private:
   SessionEndpointImpl* impl_;
   grpc_event_engine::experimental::EventEngine::ResolvedAddress local_address_;

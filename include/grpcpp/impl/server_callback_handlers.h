@@ -18,7 +18,6 @@
 #ifndef GRPCPP_IMPL_SERVER_CALLBACK_HANDLERS_H
 #define GRPCPP_IMPL_SERVER_CALLBACK_HANDLERS_H
 
-#include <grpc/event_engine/event_engine.h>
 #include <grpc/grpc.h>
 #include <grpc/impl/call.h>
 #include <grpcpp/impl/rpc_service_method.h>
@@ -1049,14 +1048,7 @@ class CallbackSessionHandler : public grpc::internal::MethodHandler {
     }
 
     void BindInnerServer(grpc::Server* inner_server) override {
-      grpc::internal::BindSessionToInnerServer(call_.call(), inner_server,
-                                               &transport_, &endpoint_);
-    }
-
-    void InitiateGracefulShutdown(
-        absl::AnyInvocable<void(absl::Status)> on_shutdown) override {
-      grpc::internal::InitiateSessionGracefulShutdown(transport_, endpoint_,
-                                                      std::move(on_shutdown));
+      grpc::internal::BindSessionToInnerServer(call_.call(), inner_server);
     }
 
    private:
@@ -1117,8 +1109,6 @@ class CallbackSessionHandler : public grpc::internal::MethodHandler {
 
     grpc::CallbackServerContext* const ctx_;
     grpc::internal::Call call_;
-    grpc_core::Transport* transport_ = nullptr;
-    grpc_event_engine::experimental::EventEngine::Endpoint* endpoint_ = nullptr;
     MessageHolder<RequestType, grpc::ByteBuffer>* const allocator_state_;
     std::function<void()> call_requester_;
     grpc::Server* inner_server_;
