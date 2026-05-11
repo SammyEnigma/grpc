@@ -121,6 +121,10 @@ const char* const additional_constraints_memory_optimization_02 = "{}";
 const char* const description_message_size_refactoring =
     "Refactoring the message size config parsing.";
 const char* const additional_constraints_message_size_refactoring = "{}";
+const char* const description_metadata_outstanding_token_refactor =
+    "Refactor ClientInitialMetadataOutstandingToken.";
+const char* const additional_constraints_metadata_outstanding_token_refactor =
+    "{}";
 const char* const description_metadata_publish_to_app_tag =
     "Publish metadata to the app using the kPublishToApp metadata field.";
 const char* const additional_constraints_metadata_publish_to_app_tag = "{}";
@@ -328,6 +332,10 @@ const ExperimentMetadata g_experiment_metadata[] = {
      additional_constraints_memory_optimization_02, nullptr, 0, false, false},
     {"message_size_refactoring", description_message_size_refactoring,
      additional_constraints_message_size_refactoring, nullptr, 0, false, true},
+    {"metadata_outstanding_token_refactor",
+     description_metadata_outstanding_token_refactor,
+     additional_constraints_metadata_outstanding_token_refactor, nullptr, 0,
+     false, true},
     {"metadata_publish_to_app_tag", description_metadata_publish_to_app_tag,
      additional_constraints_metadata_publish_to_app_tag, nullptr, 0, true,
      true},
@@ -537,6 +545,10 @@ const char* const additional_constraints_memory_optimization_02 = "{}";
 const char* const description_message_size_refactoring =
     "Refactoring the message size config parsing.";
 const char* const additional_constraints_message_size_refactoring = "{}";
+const char* const description_metadata_outstanding_token_refactor =
+    "Refactor ClientInitialMetadataOutstandingToken.";
+const char* const additional_constraints_metadata_outstanding_token_refactor =
+    "{}";
 const char* const description_metadata_publish_to_app_tag =
     "Publish metadata to the app using the kPublishToApp metadata field.";
 const char* const additional_constraints_metadata_publish_to_app_tag = "{}";
@@ -744,6 +756,10 @@ const ExperimentMetadata g_experiment_metadata[] = {
      additional_constraints_memory_optimization_02, nullptr, 0, false, false},
     {"message_size_refactoring", description_message_size_refactoring,
      additional_constraints_message_size_refactoring, nullptr, 0, false, true},
+    {"metadata_outstanding_token_refactor",
+     description_metadata_outstanding_token_refactor,
+     additional_constraints_metadata_outstanding_token_refactor, nullptr, 0,
+     false, true},
     {"metadata_publish_to_app_tag", description_metadata_publish_to_app_tag,
      additional_constraints_metadata_publish_to_app_tag, nullptr, 0, true,
      true},
@@ -953,6 +969,10 @@ const char* const additional_constraints_memory_optimization_02 = "{}";
 const char* const description_message_size_refactoring =
     "Refactoring the message size config parsing.";
 const char* const additional_constraints_message_size_refactoring = "{}";
+const char* const description_metadata_outstanding_token_refactor =
+    "Refactor ClientInitialMetadataOutstandingToken.";
+const char* const additional_constraints_metadata_outstanding_token_refactor =
+    "{}";
 const char* const description_metadata_publish_to_app_tag =
     "Publish metadata to the app using the kPublishToApp metadata field.";
 const char* const additional_constraints_metadata_publish_to_app_tag = "{}";
@@ -1160,6 +1180,10 @@ const ExperimentMetadata g_experiment_metadata[] = {
      additional_constraints_memory_optimization_02, nullptr, 0, false, false},
     {"message_size_refactoring", description_message_size_refactoring,
      additional_constraints_message_size_refactoring, nullptr, 0, false, true},
+    {"metadata_outstanding_token_refactor",
+     description_metadata_outstanding_token_refactor,
+     additional_constraints_metadata_outstanding_token_refactor, nullptr, 0,
+     false, true},
     {"metadata_publish_to_app_tag", description_metadata_publish_to_app_tag,
      additional_constraints_metadata_publish_to_app_tag, nullptr, 0, true,
      true},
